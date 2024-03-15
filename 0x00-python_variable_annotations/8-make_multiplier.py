@@ -15,4 +15,4 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     def float_multiply(x: float) -> float:
         return multiplier * x
 
-    return lambda x: x * multiplier
+    return float_multiply
