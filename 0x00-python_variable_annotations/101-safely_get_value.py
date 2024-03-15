@@ -1,6 +1,7 @@
-#1/usr/bin/python3
+#!/usr/bin/python3
 '''
-Given the parameters and the return values, add type annotations to the function
+Given the parameters and the return values, add type annotations
+to the function
 
 Hint: look into TypeVar
 def safely_get_value(dct, key, default = None):
@@ -11,10 +12,12 @@ def safely_get_value(dct, key, default = None):
 '''
 from typing import TypeVar, Mapping, Any, Union
 
+
 T = TypeVar('T')
 
-def safely_get_value(dct: Mapping, key: Any, default: Union \
-        [T, None] = None) -> Union[Any, T]:
+
+def safely_get_value(dct: Mapping, key: Any, default: Union[T, None] = None)\
+        -> Union[Any, T]:
     '''
     annotations of the function
     '''
